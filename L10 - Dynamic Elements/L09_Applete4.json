@@ -1,0 +1,26 @@
+[
+    {
+        "student_id": 1,
+        "student_name": "Ilas",
+        "student_program": "BS-walay uyab",
+        "student_enrolled_date": "2023-01-15"
+    },
+    {
+        "student_id": 2,
+        "student_name": "Sal",
+        "student_program": "BS-Lima ang uyab",
+        "student_enrolled_date": "2023-02-20"
+    },
+    {
+        "student_id": 3,
+        "student_name": "Alex",
+        "student_program": "BS - Nasaktan ang Puso",
+        "student_enrolled_date": "2023-03-10"
+    },
+    {
+        "student_id": 4,
+        "student_name": "Salex",
+        "student_program": "BS - Padayun lang",
+        "student_enrolled_date": "2023-03-10"
+    }
+]
