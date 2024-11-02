@@ -1,148 +1,112 @@
-//a.Data types
-//string;
-let color = "Blue";
-let name = "Saliz"
-//Number;
-let length = 14;
-let width = 20;
+//Data types
+let stringName = "Mark";
+let intAge = 19;
+let booleanStudent = true;
+console.log("stringName: " + stringName + "\nintAge: " + intAge + "\nbooleanStudent: " + booleanStudent);
 
-//Booleans;
-let x = true;
-let y = false;
+//Arithmetic Operation
+let num1 = 5;
+let num2 = 20;
+sum = num1 + num2;
+console.log("Sum= " + sum);
 
-//object;
-const Cellphones = {firstName: "Saliz", lastName: "Pagoy"};
-const CellphoneBrand =["Acer","HP","Lenovo"];
-
-//b. Arithmetic and Logical Operators
-//Addition
-let add = 2 + 5;
-
-//Subtraction
-let sub = 7 - 3;
-
-//Multiplacation
-let mul = 11 * 3;
-
-//Division
-let div = 11 / 2 ;
-
-//Exponentiation
-let exp = 4 ** 3;
-
-//Modulu
-let mod = 9 % 3;
-
-//Increment
-x++;
-//Decrement
-y--;
-
-//c. Conditional Statements
-//i. If else
-let number = 95;
-if(number >75 ){
-     Cellphone = "Get Now";
-}else{
-    Cellphone = "Do not Buy";
+// -CONDITIONAL STATEMENTS
+//if else
+let age = 19;   
+if (age >= 60) {
+    console.log(age + ": Old Adult");
+} else if (age > 39 ) {
+    console.log(age + ": Middle-aged Adult");
+} else if (age <= 39) {
+    console.log(age + ": Young Adult");
 }
-console.log(Laptop Brands);
+else {
+    console.log("Invalid Age");
+}
 
-//ii.Switch
-let z = 1 % 2;
-switch (z){
-    case 0:
-        yow = "Even"
-        break;
+//switch
+let month = 3;
+switch (month) {
     case 1:
-      yow = "odd"
-       break;
-       
+        console.log("January");
+        break;
+    case 2:
+        console.log("February");
+        break;
+    case 3:
+        console.log("March");
+        break;
+    case 4:
+        console.log("April");
+        break;
+    case 5:
+        console.log("May");
+        break;
     default:
-        yow= "No Value"
-}
-console.log(yow);
+        console.log("Invalid month");
 
-//d. Loops
-//i. For
-for(let b =0; b< 5; b++){
-    console.log(b);
 }
-
-//ii. For in
-const  Langga =["Sal","Ali","Jhan"];
-let bab = "";
-for(let c in Langga){
-    bab += Langga[c];
-    console.log(Langga);
+// -LOOPS-
+for (let count = 1; count <= 5; count++) {
+    console.log(count);
+}
+let countDown = 5;
+while (countDown >= 1) {
+    console.log(countDown);
+    countDown--;
 }
 
-//iii. For of
-const lastnames = ["Pags", "Raxy", "Jami"];
-let las = "";
-for(let m of lastnames){
-    las += m;
-    console.log(m);
-}
-
-
-
-//iv.For while
-let j = 0;
-while(j < 10){
-    j++;
-    console.log(j);
-}
-//e.functional Programming
-//i. odd or even
-let o = 0;
-while (o < 5){
-    o++;
-let l = o % 2;
-    switch (l){
-       case 0:
-         ak = " Even"
-          break;
-       case 1:
-        ak = "odd"
-         break;
-        default:
-        ak = "No Value"
+// -FUNCTIONAL PROGRAMMING-
+//I
+for (let number = 1; number <= 10; number++) {
+    if (number % 2 === 0) {
+        console.log("Even: " + number);
     }
-console.log(o + ". " + o + " is " + ak);
+    else {
+        console.log("Odd: " + number);
+    }
 }
 
-//ii.determine prime numbers
-let nums =34;
-if (nums == 0 || nums == 1){
-    let flag= true;
-}
-for (let d = 2; d<= nums / 2; p++){
-    flag = false;
-    break;
-}
-if (!flag){
-    console.log(nums + " is prime ");
-}else{
-    console.log(nums + " is not prime");
-}
+//II
+let primes = [];
 
-//iii. determine a string if it is a palindrome
+for (let num = 1; num <= 20; num++) {
+    let isPrime = true;
 
-function ispalindrome(Jhand){
-    let t = Jhand.length -1
-    for (let i = 0; i< Jhand.length / 2; i++){
-        if (Jhand [i] !=Jhand [t]){
-            return false;
+    
+    if (num <= 1) {
+        isPrime = false;
+    } else if (num === 2) {
+        isPrime = true; 
+    } else if (num % 2 === 0) {
+        isPrime = false; 
+    } else {
+        
+        for (let i = 3; i <= Math.sqrt(num); i += 2) {
+            if (num % i === 0) {
+                isPrime = false;
+                break;
+            }
         }
-        t--;
     }
-    return true;
-}
-let Jhand1 = "mug";
-let Jhand2 = "glass";
-let Jhand3 = "plate";
 
-console.log(ispalindrome(Jhand1));
-console.log(ispalindrome(Jhand2));
-console.log(ispalindrome(Jhand3));
+    if (isPrime) {
+        primes.push(num);
+    }
+}
+
+console.log("Prime numbers between 1 and 20:", primes);
+
+
+//III
+function isPalindrome(str) {
+    
+    let cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/gi, '');
+
+    let reversedStr = cleanedStr.split('').reverse().join('');
+
+    return cleanedStr === reversedStr;
+}
+
+let testString = "A man, a plan, a canal, Panama";
+console.log(`"${testString}" is a palindrome:`, isPalindrome(testString));
