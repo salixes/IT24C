@@ -3,7 +3,7 @@
         "title": "Applet 1 - Basic Events",
         "description": "This application contains the basic implementation of DOM events.",
         "imageUrl": "https://i.pinimg.com/564x/f3/4d/4a/f34d4a003326592009b3a07a7e368130.jpg",
-        "link": "./L06-AppletGallery/LO6_Applet1.html"
+        "link": "./L06-AppletGallery/L06_Applet1.html"
     },
     {
         "title": "Applet 2 - Leaflet Map",
