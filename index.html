@@ -42,7 +42,16 @@
             justify-content: center;
             align-items: center;
             box-sizing: border-box;
+            position: relative; /* To position the button at the bottom */
             width: 100%; /* Ensures the card takes full width of the column */
+        }
+
+        /* Styling for the image */
+        .applet-flex-container > div img {
+            width: 100%; /* Ensure the image takes up the full width of the container */
+            height: 100%; /* Ensure the image takes up the full height of the container */
+            object-fit: cover; /* Ensures the image covers the container without distortion */
+            border-radius: 10px; /* Optional: Matches the card's rounded corners */
         }
 
         .applet-flex-container > div:hover {
@@ -142,7 +151,22 @@
 </nav>
 
 <h1 class="title">Event Driven Programming Library</h1>
-<div class="applet-flex-container" id="appletContainer"></div>
+
+<div class="applet-flex-container" id="appletContainer">
+    <!-- Sample card with image -->
+    <div>
+        <img src="https://via.placeholder.com/400x200" alt="Applet Image">
+        <button class="applet-btn">Learn More</button>
+    </div>
+    <div>
+        <img src="https://via.placeholder.com/400x200" alt="Applet Image">
+        <button class="applet-btn">Learn More</button>
+    </div>
+    <div>
+        <img src="https://via.placeholder.com/400x200" alt="Applet Image">
+        <button class="applet-btn">Learn More</button>
+    </div>
+</div>
 
 <script src="gallery.js"></script>
 
