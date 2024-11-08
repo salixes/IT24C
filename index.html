@@ -22,34 +22,33 @@
 
         .applet-flex-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); /* Makes sure the cards take equal width */
-            gap: 1.5rem; /* Adds space between cards */
+            grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr)); /* Larger cards */
+            gap: 2rem; /* Increased gap between cards */
             margin-top: 2rem;
-            margin-left: 5rem;
-            margin-right: 5rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
             width: 90%; /* Wider container */
         }
 
         .applet-flex-container > div {
             color: white;
-            border-radius: 10px; /* Slightly rounded for a softer look */
+            border-radius: 15px; /* Slightly larger rounded corners */
             border: 1px solid #ddd;
             background-color: #6c757d; /* Softer, neutral background */
             transition: background-color 0.3s ease;
             padding: 20px;
-            height: 200px;
+            height: 250px; /* Increased height */
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column; /* Stack image, text, and button vertically */
+            justify-content: space-between; /* Space between image, text, and button */
             box-sizing: border-box;
-            position: relative; /* To position the button at the bottom */
+            position: relative;
             width: 100%; /* Ensures the card takes full width of the column */
         }
 
-        /* Styling for the image */
         .applet-flex-container > div img {
             width: 100%; /* Ensure the image takes up the full width of the container */
-            height: 100%; /* Ensure the image takes up the full height of the container */
+            height: 150px; /* Set height of the image */
             object-fit: cover; /* Ensures the image covers the container without distortion */
             border-radius: 10px; /* Optional: Matches the card's rounded corners */
         }
@@ -72,9 +71,9 @@
         }
 
         .applet-btn {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
+            position: relative;
+            align-self: flex-end; /* Button aligned at the bottom */
+            margin-top: auto; /* Push button to the bottom of the card */
             border-radius: 20px;
             background-color: #f36f57;
             border: none;
@@ -156,14 +155,20 @@
     <!-- Sample card with image -->
     <div>
         <img src="https://via.placeholder.com/400x200" alt="Applet Image">
+        <h4>Applet 1</h4>
+        <p>Description of Applet 1</p>
         <button class="applet-btn">Learn More</button>
     </div>
     <div>
         <img src="https://via.placeholder.com/400x200" alt="Applet Image">
+        <h4>Applet 2</h4>
+        <p>Description of Applet 2</p>
         <button class="applet-btn">Learn More</button>
     </div>
     <div>
         <img src="https://via.placeholder.com/400x200" alt="Applet Image">
+        <h4>Applet 3</h4>
+        <p>Description of Applet 3</p>
         <button class="applet-btn">Learn More</button>
     </div>
 </div>
