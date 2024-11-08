@@ -22,8 +22,8 @@
 
         .applet-flex-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr)); /* Larger cards */
-            gap: 2rem; /* Increased gap between cards */
+            grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr)); /* Keeps the cards responsive */
+            gap: 1rem; /* Added gap between cards */
             margin-top: 2rem;
             margin-left: 3rem;
             margin-right: 3rem;
@@ -36,44 +36,47 @@
             border: 1px solid #ddd;
             background-color: #6c757d; /* Softer, neutral background */
             transition: background-color 0.3s ease;
-            padding: 20px;
-            height: 250px; /* Increased height */
-            display: flex;
-            flex-direction: column; /* Stack image, text, and button vertically */
-            justify-content: space-between; /* Space between image, text, and button */
-            box-sizing: border-box;
-            position: relative;
+            padding: 10px;
             width: 100%; /* Ensures the card takes full width of the column */
+            height: 0; /* Set height to 0 initially */
+            padding-bottom: 100%; /* Creates a square container by using padding-bottom */
+            position: relative; /* Needed to position the child elements */
+            box-sizing: border-box;
         }
 
         .applet-flex-container > div img {
             width: 100%; /* Ensure the image takes up the full width of the container */
-            height: 150px; /* Set height of the image */
+            height: 100%; /* Ensure the image takes up the full height */
             object-fit: cover; /* Ensures the image covers the container without distortion */
             border-radius: 10px; /* Optional: Matches the card's rounded corners */
+        }
+
+        .applet-flex-container > div h4 {
+            position: absolute;
+            bottom: 40px; /* Adjust text position */
+            left: 10px;
+            color: white;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .applet-flex-container > div p {
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+            color: white;
+            font-size: 0.9rem;
+            margin: 0;
         }
 
         .applet-flex-container > div:hover {
             background-color: #495057; /* Slightly darker on hover */
         }
 
-        .applet-flex-container > div:hover .applet-btn {
-            color: white;
-        }
-
-        .title {
-            margin-top: 1rem;
-            text-align: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: center;
-            color: #6c757d; /* Neutral title color */
-        }
-
         .applet-btn {
-            position: relative;
-            align-self: flex-end; /* Button aligned at the bottom */
-            margin-top: auto; /* Push button to the bottom of the card */
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
             border-radius: 20px;
             background-color: #f36f57;
             border: none;
@@ -154,19 +157,19 @@
 <div class="applet-flex-container" id="appletContainer">
     <!-- Sample card with image -->
     <div>
-        <img src="https://via.placeholder.com/400x200" alt="Applet Image">
+        <img src="https://via.placeholder.com/400x400" alt="Applet Image">
         <h4>Applet 1</h4>
         <p>Description of Applet 1</p>
         <button class="applet-btn">Learn More</button>
     </div>
     <div>
-        <img src="https://via.placeholder.com/400x200" alt="Applet Image">
+        <img src="https://via.placeholder.com/400x400" alt="Applet Image">
         <h4>Applet 2</h4>
         <p>Description of Applet 2</p>
         <button class="applet-btn">Learn More</button>
     </div>
     <div>
-        <img src="https://via.placeholder.com/400x200" alt="Applet Image">
+        <img src="https://via.placeholder.com/400x400" alt="Applet Image">
         <h4>Applet 3</h4>
         <p>Description of Applet 3</p>
         <button class="applet-btn">Learn More</button>
