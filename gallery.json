@@ -2,39 +2,31 @@
     {
         "title": "Applet 1 - Basic Events",
         "description": "This application contains the basic implementation of DOM events.",
-        "imageUrl": "https://i.pinimg.com/originals/d3/ac/7d/d3ac7d8f48bdd79b62f205a1929ec2ac.gif",
-        "link": "./L06-AppletGallery/L06_Applet1.html"
+        "link": "L06-AppletGallery/L06_Applet1.html"
     },
     {
         "title": "Applet 2 - Leaflet Map",
         "description": "This application contains the basic web map.",
-        "imageUrl": "https://i.pinimg.com/originals/d3/ac/7d/d3ac7d8f48bdd79b62f205a1929ec2ac.gif",
-        "link": "./L07-LeafletMap/L07_Applet2.html"
+        "link": "L07-LeafletMap/L07_Applet2"
     },
     {
         "title": "Applet 3 - Event Logger",
         "description": "This application contains the logs with the date and total number of logs.",
-        "imageUrl": "https://i.pinimg.com/originals/d3/ac/7d/d3ac7d8f48bdd79b62f205a1929ec2ac.gif",
-        "link": "./L08-EventLogger/L08_Applet3.html"
+        "link": "L08-EventLogger/L08_Applet3.html"
     },
     {
         "title": "Applet 4 - Dynamic Elements",
         "description": "This application applies dynamic elements such as rendering DOM elements from a list.",
-        "imageUrl": "https://i.pinimg.com/originals/d3/ac/7d/d3ac7d8f48bdd79b62f205a1929ec2ac.gif",
-        "link": "./L09-DynamicElements/L09_Applet4.html"
+        "link": "L09-DynamicElements/L09_Applet4.html"
     },
     {
         "title": "Applet 5 - Open Weather",
-        "description": "This application is the basic usage of the Openweather API.",
-        "imageUrl": "https://i.pinimg.com/originals/d3/ac/7d/d3ac7d8f48bdd79b62f205a1929ec2ac.gif",
-        "link": "./L011-OpenWeather/L011_Applet5.html"
+        "description": "This application is the basic usage of the Openweather API",
+        "link": "L011-OpenWeather/L011_Applet5html"
     },
     {
-        "title": "Applet 6 - To do List",
-        "description": "A to-do list is a tool that helps individuals manage tasks by allowing them to add, edit, and remove items",
-        "imageUrl": "https://i.pinimg.com/originals/d3/ac/7d/d3ac7d8f48bdd79b62f205a1929ec2ac.gif",
-        "link": "./L12-TodoList/L12_Applet6.html"
+        "title": "Applet 6 - Todo List",
+        "description": "A to-do list is a tool that helps individuals manage tasks by allowing them to add, edit, and remove items.",
+        "link": "L12-TodoList/L12_Applet6.html"
     }
-    
-    
 ]
